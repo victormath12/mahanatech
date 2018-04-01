@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body{
+ font-family: 'Roboto', sans-serif;
+ color: $COLOR_BLACK;
+ font-size: 100%;
+ font-weight: 300;
+}
+
+.title {
+ color: $COLOR_PRIMARY;
+ font-weight: 300;
+}
+
+.subtitle {
+ color: $COLOR_PRIMARY_SHADOW;
+ font-weight: 300;
+}
+
+.topic {
+ color: $COLOR_GRAY;
+ font-weight: 300;
+}
+
+.text {
+ color: $COLOR_BLACK;
+ font-weight: 300;
+}

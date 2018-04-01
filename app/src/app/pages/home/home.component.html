@@ -1,0 +1,62 @@
+<main>
+
+  <h2 class="topic">Seja bem Vindo Visitante!</h2><br>
+  <p class="text">Preencha o formulário abaixo para conhecermos você melhor:</p>
+
+  <form class="form" (ngSubmit)="onSubmit(form)" #form='ngForm'>
+
+    <mat-form-field class="form__field">
+      <input type="text" matInput placeholder="Nome Completo" name="nome" ngModel required>
+    </mat-form-field>
+
+    <mat-form-field class="form__field">
+      <input type="text" matInput placeholder="Email" name="email" ngModel required>
+    </mat-form-field>
+
+    <mat-form-field class="form__field">
+      <input type="text" matInput placeholder="Telefone" name="telefone" ngModel required>
+    </mat-form-field>
+
+    <mat-form-field class="form__field">
+      <input type="text" matInput placeholder="WhatsApp" name="whats" ngModel required>
+    </mat-form-field>
+
+    <mat-form-field class="form__field">
+      <input type="text" matInput placeholder="Data Nascimento" name="data_nascimento" ngModel required>
+    </mat-form-field>
+
+    <mat-form-field class="form__field">
+      <mat-select placeholder="Religião" name="religiao" ngModel required>
+        <mat-option value="nenhuma">Sem Religião</mat-option>
+        <mat-option value="evangelico">Evangelico</mat-option>
+        <mat-option value="catolico">Catolico</mat-option>
+        <mat-option value="espirita">Espirita</mat-option>
+        <mat-option value="mormon">Mórmon</mat-option>
+        <mat-option value="budista">Budista</mat-option>
+        <mat-option value="outro">Outro</mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <mat-form-field class="form__field">
+      <input type="text" matInput placeholder="Endereço" name="endereco" ngModel required>
+    </mat-form-field>
+
+    <mat-form-field class="form__field">
+      <input type="text" matInput placeholder="Cidade" name="cidade" ngModel required>
+    </mat-form-field>
+
+    <mat-form-field class="form__field">
+      <input type="text" matInput placeholder="Estado" name="estado" ngModel required>
+    </mat-form-field>
+
+    <button 
+      type="submit"
+      [disabled]="form.invalid"
+      mat-raised-button 
+      color="primary"
+      class="button-submit">ENVIAR
+    </button>
+
+  </form>
+
+</main>

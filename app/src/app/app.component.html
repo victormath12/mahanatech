@@ -1,0 +1,19 @@
+<mat-sidenav-container class="app-container">
+
+  <!-- navigation menu -->
+  <mat-sidenav mode="side" [opened]="sidebar" class="app-sidenav">
+    <app-menu></app-menu>
+  </mat-sidenav>
+
+  <!-- application container -->
+  <mat-sidenav-content class="app-container">
+
+    <!-- header -->
+    <app-header (menuClicked)="toggleSidebar($event);"></app-header>
+
+    <!-- Page Container -->
+    <router-outlet></router-outlet>
+
+  </mat-sidenav-content>
+
+</mat-sidenav-container>
