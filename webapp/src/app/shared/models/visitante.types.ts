@@ -8,6 +8,7 @@ export class Visitante {
  endereco: string;
  estado: string;
  nome: string;
+ firstname: string;
  religiao: string;
  telefone: string;
  whats: string;

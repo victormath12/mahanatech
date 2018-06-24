@@ -15,6 +15,7 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import {MatMenuModule} from '@angular/material/menu';
 import {MatSelectModule} from '@angular/material/select';
+import {MatSnackBarModule} from '@angular/material/snack-bar';
 
 /** Services */
 import { ValidationService } from './services/validation.service';
@@ -40,7 +41,8 @@ import { MenuComponent } from './webparts/menu/menu.component';
     MatFormFieldModule,
     MatInputModule,
     MatMenuModule,
-    MatSelectModule
+    MatSelectModule,
+    MatSnackBarModule
   ],
   declarations: [
     HeaderComponent,
@@ -63,7 +65,8 @@ import { MenuComponent } from './webparts/menu/menu.component';
     MatFormFieldModule,
     MatInputModule,
     MatMenuModule,
-    MatSelectModule
+    MatSelectModule,
+    MatSnackBarModule
   ],
   providers: [
     ValidationService

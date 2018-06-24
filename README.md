@@ -1,2 +1,2 @@
 # mahanatech
-Aplicação para cadastro de novos membros na Igreja Mahanaim
+O MahanaTech é o canal de tecnologia da igreja Mahanaim
