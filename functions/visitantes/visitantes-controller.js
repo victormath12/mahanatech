@@ -1,8 +1,8 @@
 
 // Mailjet API
-const API_PUBLIC = 'a75e20fd6db27f16992af33051331e09';
-const API_SECRET = 'f01c102a8592528de92cea277030225a';
-const mailjet = require ('node-mailjet').connect(API_PUBLIC, API_SECRET);
+const API_PUBLIC = 'd6d6bf093196e20d7c9f1d9e9302ad42';
+const API_SECRET = 'd99f797e70bb6d75a9dfda9339575f29';
+const mailjet = require('node-mailjet').connect(API_PUBLIC, API_SECRET);
 
 
 exports.post = (req, res, next) => {
@@ -41,8 +41,8 @@ exports.sendMailjet = (req, res, next) => {
 		"Messages":[
 			{
 				"From": {
-					"Email": "victormath12@hotmail.com",
-					"Name": "Rede Jovem START"
+					"Email": "lucasftecinfo@gmail.com",
+					"Name": "Igreja Mahanaim"
 				},
 				"To": [
 					{
@@ -50,9 +50,9 @@ exports.sendMailjet = (req, res, next) => {
 						"Name": contato.firstname
 					}
 				],
-				"TemplateID": 380955,
+				"TemplateID": 351469,
 				"TemplateLanguage": true,
-				"Subject": "Seja Bem Vindo",
+				"Subject": "Igreja Mahanaim | Bem Vindos",
 				"Variables": {
           "firstname": contato.firstname
         }
